@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #112132;
+  --white: #fff;
+  --yellow: #fbc14c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--blue);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+.container .navbar {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding: 0 10%;
+}
+
+.navbar .logo {
+  color: var(--yellow);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-right: 2rem;
+}
+
+.navbar .navbar__items {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: var(--white);
+}
+
+ul li {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+li.cta {
+  background: var(--yellow);
+  padding: 8px 1rem;
+  margin-right: 0;
+  border: 1px solid var(--yellow);
+  border-radius: 20px;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+  color: var(--blue);
+}
+
+li.cta:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.container .wrapper {
+  display: flex;
+  height: calc(100vh - 70px);
+  max-height: calc(100vh - 70px);
+}
+
+.wrapper .left__wrapper {
+  width: 50%;
+  height: 100%;
+  padding-left: 10%;
+  padding-top: 4rem;
+}
+
+.left__wrapper .heading h1 {
+  color: var(--white);
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.left__wrapper .heading p {
+  color: lightgray;
+  font-size: 0.9rem;
+  padding-bottom: 2rem;
+}
+
+.left__wrapper .btn__container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.left__wrapper .btn__container button {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--yellow);
+  background: var(--blue);
+  color: var(--white);
+  transition: 0.5s ease-in-out;
+  border-radius: 30px;
+}
+
+.left__wrapper .btn__container button i {
+  margin-right: 3px;
+}
+
+.left__wrapper .btn__container button:hover {
+  background: var(--yellow);
+  color: var(--blue);
+}
+
+.left__wrapper .btn__container button.start {
+  margin-right: 20px;
+  color: var(--blue);
+  background: var(--yellow);
+}
+
+.left__wrapper .btn__container button.start:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.left__wrapper .text__container {
+  display: flex;
+  align-items: center;
+  color: lightgray;
+  font-size: 0.8rem;
+}
+.left__wrapper .text__container i {
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.left__wrapper .text__container .icons {
+  display: flex;
+  align-items: center;
+}
+
+.left__wrapper .text__container .icons p {
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.left__wrapper .text__container .icons p i {
+  margin-right: 3px;
+}
+
+.wrapper .right__wrapper img {
+  width: 100%;
+  padding-top: 3rem;
+}
